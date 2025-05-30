@@ -1,0 +1,21 @@
+(1)
+E::=E + T
+E::=T
+T::=T * F
+T::=F
+F::=( E )
+F::=id
+
+(aa*aa)+aa
+aa+aa*aa
+
+(2)
+
+S::=A S
+A::=S A
+S::=b
+A::=a
+
+
+
+

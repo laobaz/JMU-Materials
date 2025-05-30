@@ -1,0 +1,32 @@
+﻿  SLR_Grammer_parser.cpp
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\init.h(170,27): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(23,23): warning C4018: “>=”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(28,19): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(59,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(71,27): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(83,27): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(124,27): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(128,27): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(137,33): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(145,30): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(206,27): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(208,31): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(218,45): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(253,45): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(288,43): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(320,39): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(342,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(406,27): warning C4018: “<=”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(439,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(616,19): warning C4018: “>=”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(770,39): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(829,14): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(837,27): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(870,34): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(964,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(1018,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(1022,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(444): warning C4172: 返回局部变量或临时变量的地址: pro
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(464): warning C4715: “find_next_projects”: 不是所有的控件路径都返回值
+C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\SLR分析器_new\function.h(961): warning C4715: “find_production”: 不是所有的控件路径都返回值
+  SLR分析器_new.vcxproj -> C:\Users\86159\Desktop\大三作业\编译原理\课设\SLR分析器_new\Debug\SLR分析器_new.exe
