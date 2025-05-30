@@ -1,0 +1,4 @@
+﻿  第一张.cpp
+C:\Users\86159\Desktop\k课设\数据结构\数据结构\第一张.cpp(21,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\86159\Desktop\k课设\数据结构\数据结构\第一张.cpp(38,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  数据结构.vcxproj -> C:\Users\86159\Desktop\k课设\数据结构\x64\Debug\数据结构.exe
