@@ -1,0 +1,4 @@
+﻿  Gradient_descent_analyzer.cpp
+C:\Users\86159\Desktop\大三作业\编译原理\梯度下降分析器\梯度下降分析器\梯度下降分析器\Gradient_descent_analyzer.cpp(35,16): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\86159\Desktop\大三作业\编译原理\梯度下降分析器\梯度下降分析器\梯度下降分析器\Gradient_descent_analyzer.cpp(106,29): warning C4018: “<”: 有符号/无符号不匹配
+  梯度下降分析器.vcxproj -> C:\Users\86159\Desktop\大三作业\编译原理\梯度下降分析器\梯度下降分析器\Debug\梯度下降分析器.exe
