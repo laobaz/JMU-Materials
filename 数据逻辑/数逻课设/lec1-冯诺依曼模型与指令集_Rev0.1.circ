@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+  </circuit>
+  <circuit name="摄氏/华氏温度转换(专用设计)">
+    <a name="circuit" val="摄氏/华氏温度转换(专用设计)"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(160,390)" to="(190,390)"/>
+    <wire from="(400,370)" to="(410,370)"/>
+    <wire from="(320,360)" to="(330,360)"/>
+    <wire from="(240,350)" to="(250,350)"/>
+    <wire from="(190,390)" to="(500,390)"/>
+    <wire from="(190,350)" to="(190,390)"/>
+    <wire from="(210,330)" to="(250,330)"/>
+    <wire from="(290,340)" to="(330,340)"/>
+    <wire from="(500,380)" to="(500,390)"/>
+    <wire from="(370,350)" to="(410,350)"/>
+    <wire from="(450,360)" to="(490,360)"/>
+    <comp lib="3" loc="(450,360)" name="Adder"/>
+    <comp lib="4" loc="(520,360)" name="Register">
+      <a name="label" val="temp_F"/>
+    </comp>
+    <comp lib="0" loc="(400,370)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0x20"/>
+    </comp>
+    <comp lib="4" loc="(210,330)" name="Register">
+      <a name="label" val="temp_C"/>
+    </comp>
+    <comp lib="3" loc="(290,340)" name="Multiplier"/>
+    <comp lib="6" loc="(185,282)" name="Text">
+      <a name="text" val="以摄氏转华氏为例"/>
+    </comp>
+    <comp lib="0" loc="(240,350)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0x9"/>
+    </comp>
+    <comp lib="0" loc="(160,390)" name="Clock"/>
+    <comp lib="3" loc="(370,350)" name="Divider"/>
+    <comp lib="0" loc="(320,360)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0x5"/>
+    </comp>
+  </circuit>
+  <circuit name="2×2矩阵乘法阵列">
+    <a name="circuit" val="2×2矩阵乘法阵列"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(290,400)" to="(350,400)"/>
+    <wire from="(480,490)" to="(540,490)"/>
+    <wire from="(490,510)" to="(540,510)"/>
+    <wire from="(300,420)" to="(350,420)"/>
+    <wire from="(410,490)" to="(410,500)"/>
+    <wire from="(510,430)" to="(510,440)"/>
+    <wire from="(530,320)" to="(570,320)"/>
+    <wire from="(360,440)" to="(360,460)"/>
+    <wire from="(530,320)" to="(530,410)"/>
+    <wire from="(400,530)" to="(510,530)"/>
+    <wire from="(140,170)" to="(140,260)"/>
+    <wire from="(400,500)" to="(400,530)"/>
+    <wire from="(300,170)" to="(340,170)"/>
+    <wire from="(530,170)" to="(530,210)"/>
+    <wire from="(90,270)" to="(120,270)"/>
+    <wire from="(110,170)" to="(140,170)"/>
+    <wire from="(570,500)" to="(590,500)"/>
+    <wire from="(530,460)" to="(550,460)"/>
+    <wire from="(570,300)" to="(590,300)"/>
+    <wire from="(510,430)" to="(540,430)"/>
+    <wire from="(380,410)" to="(400,410)"/>
+    <wire from="(70,290)" to="(70,330)"/>
+    <wire from="(140,110)" to="(350,110)"/>
+    <wire from="(340,460)" to="(340,500)"/>
+    <wire from="(140,170)" to="(160,170)"/>
+    <wire from="(400,500)" to="(410,500)"/>
+    <wire from="(340,500)" to="(350,500)"/>
+    <wire from="(340,520)" to="(350,520)"/>
+    <wire from="(150,450)" to="(160,450)"/>
+    <wire from="(150,490)" to="(160,490)"/>
+    <wire from="(70,330)" to="(80,330)"/>
+    <wire from="(350,110)" to="(350,170)"/>
+    <wire from="(570,250)" to="(570,300)"/>
+    <wire from="(530,410)" to="(540,410)"/>
+    <wire from="(530,290)" to="(540,290)"/>
+    <wire from="(520,460)" to="(530,460)"/>
+    <wire from="(290,490)" to="(350,490)"/>
+    <wire from="(480,400)" to="(540,400)"/>
+    <wire from="(340,170)" to="(340,300)"/>
+    <wire from="(490,420)" to="(540,420)"/>
+    <wire from="(300,510)" to="(350,510)"/>
+    <wire from="(410,400)" to="(410,410)"/>
+    <wire from="(510,520)" to="(510,530)"/>
+    <wire from="(400,440)" to="(510,440)"/>
+    <wire from="(400,410)" to="(400,440)"/>
+    <wire from="(550,440)" to="(550,460)"/>
+    <wire from="(540,270)" to="(540,290)"/>
+    <wire from="(570,300)" to="(570,320)"/>
+    <wire from="(530,460)" to="(530,500)"/>
+    <wire from="(570,410)" to="(590,410)"/>
+    <wire from="(510,520)" to="(540,520)"/>
+    <wire from="(310,300)" to="(340,300)"/>
+    <wire from="(340,460)" to="(360,460)"/>
+    <wire from="(350,170)" to="(370,170)"/>
+    <wire from="(380,500)" to="(400,500)"/>
+    <wire from="(340,300)" to="(340,410)"/>
+    <wire from="(510,170)" to="(530,170)"/>
+    <wire from="(520,210)" to="(520,250)"/>
+    <wire from="(400,410)" to="(410,410)"/>
+    <wire from="(520,250)" to="(530,250)"/>
+    <wire from="(520,210)" to="(530,210)"/>
+    <wire from="(340,410)" to="(350,410)"/>
+    <wire from="(330,460)" to="(340,460)"/>
+    <wire from="(340,430)" to="(350,430)"/>
+    <wire from="(80,450)" to="(90,450)"/>
+    <wire from="(80,490)" to="(90,490)"/>
+    <wire from="(60,330)" to="(70,330)"/>
+    <wire from="(530,500)" to="(540,500)"/>
+    <wire from="(560,250)" to="(570,250)"/>
+    <wire from="(140,110)" to="(140,170)"/>
+    <comp lib="0" loc="(490,420)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="8"/>
+      <a name="label" val="B21"/>
+    </comp>
+    <comp lib="0" loc="(480,490)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="6" loc="(223,229)" name="Text">
+      <a name="text" val="矩阵A第一列"/>
+    </comp>
+    <comp lib="0" loc="(290,490)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp loc="(570,500)" name="乘累加运算单元"/>
+    <comp lib="0" loc="(330,460)" name="Probe">
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp loc="(380,500)" name="乘累加运算单元"/>
+    <comp lib="0" loc="(140,260)" name="Splitter">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(110,170)" name="Probe">
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(300,510)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="8"/>
+      <a name="label" val="B12"/>
+    </comp>
+    <comp lib="0" loc="(80,450)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0x4"/>
+    </comp>
+    <comp loc="(570,410)" name="乘累加运算单元"/>
+    <comp lib="0" loc="(340,430)" name="Ground">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="6" loc="(372,71)" name="Text">
+      <a name="text" val="操作方式：在模拟状态下单击时钟并产生上升沿，通过上升沿触发地址计数器的值发生改变，从而输入矩阵A"/>
+    </comp>
+    <comp lib="0" loc="(310,300)" name="Probe">
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(290,400)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(60,330)" name="Clock"/>
+    <comp lib="0" loc="(90,490)" name="Tunnel">
+      <a name="width" val="8"/>
+      <a name="label" val="B21"/>
+    </comp>
+    <comp lib="0" loc="(530,290)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(590,500)" name="Probe">
+      <a name="facing" val="west"/>
+      <a name="radix" val="10unsigned"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(80,330)" name="Tunnel">
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(160,490)" name="Tunnel">
+      <a name="width" val="8"/>
+      <a name="label" val="B22"/>
+    </comp>
+    <comp lib="0" loc="(150,490)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0x7"/>
+    </comp>
+    <comp loc="(380,410)" name="乘累加运算单元"/>
+    <comp lib="6" loc="(199,47)" name="Text">
+      <a name="text" val="以下数字电路展示一种2×2矩阵乘法的设计"/>
+    </comp>
+    <comp lib="0" loc="(80,490)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0x6"/>
+    </comp>
+    <comp lib="6" loc="(423,229)" name="Text">
+      <a name="text" val="矩阵A第二列"/>
+    </comp>
+    <comp lib="6" loc="(634,259)" name="Text">
+      <a name="text" val="使用寄存器延迟一拍"/>
+    </comp>
+    <comp lib="0" loc="(120,280)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(410,400)" name="Probe">
+      <a name="facing" val="south"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="6" loc="(83,420)" name="Text">
+      <a name="text" val="矩阵B元素"/>
+    </comp>
+    <comp lib="0" loc="(480,400)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(160,450)" name="Tunnel">
+      <a name="width" val="8"/>
+      <a name="label" val="B12"/>
+    </comp>
+    <comp lib="4" loc="(560,250)" name="Register"/>
+    <comp lib="4" loc="(90,270)" name="Counter">
+      <a name="width" val="1"/>
+      <a name="max" val="0x1"/>
+      <a name="ongoal" val="stay"/>
+      <a name="label" val="地址计数器"/>
+    </comp>
+    <comp lib="0" loc="(90,450)" name="Tunnel">
+      <a name="width" val="8"/>
+      <a name="label" val="B11"/>
+    </comp>
+    <comp lib="4" loc="(510,170)" name="ROM">
+      <a name="addrWidth" val="2"/>
+      <a name="contents">addr/data: 2 8
+1 3 3 4
+</a>
+    </comp>
+    <comp lib="0" loc="(410,490)" name="Probe">
+      <a name="facing" val="south"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(340,520)" name="Ground">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(490,510)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="8"/>
+      <a name="label" val="B22"/>
+    </comp>
+    <comp lib="0" loc="(590,300)" name="Probe">
+      <a name="facing" val="west"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="6" loc="(667,454)" name="Text">
+      <a name="text" val="矩阵C计算结果"/>
+    </comp>
+    <comp lib="4" loc="(300,170)" name="ROM">
+      <a name="addrWidth" val="2"/>
+      <a name="contents">addr/data: 2 8
+2 1 3 4
+</a>
+    </comp>
+    <comp lib="0" loc="(520,460)" name="Probe">
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(590,410)" name="Probe">
+      <a name="facing" val="west"/>
+      <a name="radix" val="10unsigned"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(300,420)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="8"/>
+      <a name="label" val="B11"/>
+    </comp>
+    <comp lib="0" loc="(150,450)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0x5"/>
+    </comp>
+  </circuit>
+  <circuit name="乘累加运算单元">
+    <a name="circuit" val="乘累加运算单元"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(230,200)" to="(230,330)"/>
+    <wire from="(310,330)" to="(310,400)"/>
+    <wire from="(400,210)" to="(430,210)"/>
+    <wire from="(210,220)" to="(270,220)"/>
+    <wire from="(460,210)" to="(510,210)"/>
+    <wire from="(330,230)" to="(350,230)"/>
+    <wire from="(210,270)" to="(330,270)"/>
+    <wire from="(400,210)" to="(400,220)"/>
+    <wire from="(330,230)" to="(330,270)"/>
+    <wire from="(280,350)" to="(280,360)"/>
+    <wire from="(210,170)" to="(230,170)"/>
+    <wire from="(210,130)" to="(230,130)"/>
+    <wire from="(390,220)" to="(400,220)"/>
+    <wire from="(440,230)" to="(440,250)"/>
+    <wire from="(300,330)" to="(310,330)"/>
+    <wire from="(390,160)" to="(400,160)"/>
+    <wire from="(400,160)" to="(400,210)"/>
+    <wire from="(230,200)" to="(270,200)"/>
+    <wire from="(230,330)" to="(270,330)"/>
+    <wire from="(310,210)" to="(350,210)"/>
+    <wire from="(230,170)" to="(230,200)"/>
+    <comp lib="4" loc="(460,210)" name="Register">
+      <a name="label" val="乘积并累加结果寄存"/>
+    </comp>
+    <comp lib="0" loc="(390,160)" name="Probe"/>
+    <comp lib="0" loc="(440,250)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(230,130)" name="Tunnel">
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(310,400)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="label" val="输入A寄存值"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="3" loc="(390,220)" name="Adder"/>
+    <comp lib="0" loc="(210,270)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="相邻列累加输入"/>
+    </comp>
+    <comp lib="0" loc="(210,130)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(280,360)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(210,170)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(210,220)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="4" loc="(300,330)" name="Register">
+      <a name="label" val="输入A寄存"/>
+    </comp>
+    <comp lib="0" loc="(510,210)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="label" val="乘累加结果"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="3" loc="(310,210)" name="Multiplier"/>
+  </circuit>
+  <circuit name="摄氏/华氏温度转换（冯氏模型v1）">
+    <a name="circuit" val="摄氏/华氏温度转换（冯氏模型v1）"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(390,380)" to="(390,450)"/>
+    <wire from="(180,200)" to="(180,330)"/>
+    <wire from="(180,520)" to="(690,520)"/>
+    <wire from="(690,380)" to="(690,520)"/>
+    <wire from="(340,330)" to="(390,330)"/>
+    <wire from="(580,360)" to="(620,360)"/>
+    <wire from="(580,370)" to="(620,370)"/>
+    <wire from="(390,310)" to="(390,330)"/>
+    <wire from="(690,380)" to="(730,380)"/>
+    <wire from="(390,280)" to="(390,310)"/>
+    <wire from="(590,380)" to="(590,460)"/>
+    <wire from="(580,370)" to="(580,390)"/>
+    <wire from="(270,370)" to="(270,460)"/>
+    <wire from="(580,320)" to="(580,360)"/>
+    <wire from="(240,460)" to="(270,460)"/>
+    <wire from="(560,320)" to="(580,320)"/>
+    <wire from="(560,390)" to="(580,390)"/>
+    <wire from="(490,330)" to="(520,330)"/>
+    <wire from="(490,400)" to="(520,400)"/>
+    <wire from="(490,470)" to="(520,470)"/>
+    <wire from="(660,380)" to="(690,380)"/>
+    <wire from="(180,350)" to="(180,520)"/>
+    <wire from="(640,200)" to="(640,360)"/>
+    <wire from="(560,460)" to="(590,460)"/>
+    <wire from="(590,380)" to="(620,380)"/>
+    <wire from="(230,370)" to="(230,410)"/>
+    <wire from="(180,330)" to="(200,330)"/>
+    <wire from="(180,350)" to="(200,350)"/>
+    <wire from="(390,330)" to="(390,380)"/>
+    <wire from="(220,410)" to="(230,410)"/>
+    <wire from="(390,310)" to="(520,310)"/>
+    <wire from="(390,380)" to="(520,380)"/>
+    <wire from="(390,450)" to="(520,450)"/>
+    <comp lib="6" loc="(708,337)" name="Text">
+      <a name="text" val="选择信号等于2：加32"/>
+    </comp>
+    <comp lib="0" loc="(180,200)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="width" val="2"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="控制存储器的地址"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(730,380)" name="Probe">
+      <a name="facing" val="west"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(490,470)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0x20"/>
+    </comp>
+    <comp lib="3" loc="(560,460)" name="Adder"/>
+    <comp lib="3" loc="(560,320)" name="Multiplier"/>
+    <comp lib="6" loc="(708,296)" name="Text">
+      <a name="text" val="选择信号等于0：乘以9"/>
+    </comp>
+    <comp lib="3" loc="(560,390)" name="Divider"/>
+    <comp lib="2" loc="(660,380)" name="Multiplexer">
+      <a name="selloc" val="tr"/>
+      <a name="select" val="2"/>
+      <a name="width" val="8"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(390,280)" name="Probe">
+      <a name="facing" val="south"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="6" loc="(267,273)" name="Text">
+      <a name="text" val="存储器"/>
+    </comp>
+    <comp lib="0" loc="(240,460)" name="Clock"/>
+    <comp lib="6" loc="(707,317)" name="Text">
+      <a name="text" val="选择信号等于1：除以5"/>
+    </comp>
+    <comp lib="0" loc="(490,400)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0x5"/>
+    </comp>
+    <comp lib="4" loc="(340,330)" name="RAM">
+      <a name="addrWidth" val="2"/>
+      <a name="bus" val="separate"/>
+    </comp>
+    <comp lib="0" loc="(640,200)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="width" val="2"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="控制复用器的选择信号"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(490,330)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0x9"/>
+    </comp>
+    <comp lib="0" loc="(220,410)" name="Constant"/>
+  </circuit>
+  <circuit name="摄氏/华氏温度转换（冯氏模型v2）">
+    <a name="circuit" val="摄氏/华氏温度转换（冯氏模型v2）"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(390,380)" to="(390,450)"/>
+    <wire from="(330,90)" to="(380,90)"/>
+    <wire from="(90,210)" to="(140,210)"/>
+    <wire from="(580,370)" to="(620,370)"/>
+    <wire from="(390,310)" to="(390,330)"/>
+    <wire from="(690,380)" to="(730,380)"/>
+    <wire from="(180,190)" to="(410,190)"/>
+    <wire from="(590,380)" to="(590,460)"/>
+    <wire from="(110,110)" to="(110,140)"/>
+    <wire from="(580,320)" to="(580,360)"/>
+    <wire from="(240,460)" to="(270,460)"/>
+    <wire from="(560,390)" to="(580,390)"/>
+    <wire from="(490,330)" to="(520,330)"/>
+    <wire from="(490,470)" to="(520,470)"/>
+    <wire from="(660,380)" to="(690,380)"/>
+    <wire from="(410,80)" to="(410,190)"/>
+    <wire from="(560,460)" to="(590,460)"/>
+    <wire from="(230,370)" to="(230,410)"/>
+    <wire from="(90,140)" to="(110,140)"/>
+    <wire from="(180,330)" to="(200,330)"/>
+    <wire from="(180,350)" to="(200,350)"/>
+    <wire from="(400,80)" to="(410,80)"/>
+    <wire from="(390,330)" to="(390,380)"/>
+    <wire from="(390,310)" to="(520,310)"/>
+    <wire from="(390,450)" to="(520,450)"/>
+    <wire from="(310,370)" to="(310,430)"/>
+    <wire from="(180,520)" to="(690,520)"/>
+    <wire from="(690,380)" to="(690,520)"/>
+    <wire from="(130,90)" to="(190,90)"/>
+    <wire from="(340,330)" to="(390,330)"/>
+    <wire from="(180,190)" to="(180,330)"/>
+    <wire from="(580,360)" to="(620,360)"/>
+    <wire from="(110,140)" to="(110,160)"/>
+    <wire from="(400,70)" to="(640,70)"/>
+    <wire from="(390,280)" to="(390,310)"/>
+    <wire from="(580,370)" to="(580,390)"/>
+    <wire from="(270,370)" to="(270,460)"/>
+    <wire from="(130,100)" to="(160,100)"/>
+    <wire from="(560,320)" to="(580,320)"/>
+    <wire from="(490,400)" to="(520,400)"/>
+    <wire from="(180,350)" to="(180,520)"/>
+    <wire from="(160,430)" to="(310,430)"/>
+    <wire from="(590,380)" to="(620,380)"/>
+    <wire from="(640,70)" to="(640,360)"/>
+    <wire from="(220,410)" to="(230,410)"/>
+    <wire from="(390,380)" to="(520,380)"/>
+    <comp lib="0" loc="(490,330)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0x9"/>
+    </comp>
+    <comp lib="3" loc="(560,320)" name="Multiplier"/>
+    <comp lib="4" loc="(340,330)" name="RAM">
+      <a name="addrWidth" val="2"/>
+      <a name="bus" val="separate"/>
+    </comp>
+    <comp lib="0" loc="(490,470)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0x20"/>
+    </comp>
+    <comp lib="3" loc="(560,460)" name="Adder"/>
+    <comp lib="0" loc="(220,410)" name="Constant"/>
+    <comp lib="4" loc="(130,90)" name="Counter">
+      <a name="width" val="2"/>
+      <a name="max" val="0x2"/>
+      <a name="label" val="程序计数器"/>
+    </comp>
+    <comp lib="6" loc="(708,296)" name="Text">
+      <a name="text" val="选择信号等于0：乘以9"/>
+    </comp>
+    <comp lib="6" loc="(274,272)" name="Text">
+      <a name="text" val="数据存储器"/>
+    </comp>
+    <comp lib="0" loc="(490,400)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0x5"/>
+    </comp>
+    <comp lib="6" loc="(707,317)" name="Text">
+      <a name="text" val="选择信号等于1：除以5"/>
+    </comp>
+    <comp lib="0" loc="(90,140)" name="Clock"/>
+    <comp lib="2" loc="(660,380)" name="Multiplexer">
+      <a name="selloc" val="tr"/>
+      <a name="select" val="2"/>
+      <a name="width" val="8"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(380,90)" name="Splitter">
+      <a name="incoming" val="4"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="1"/>
+      <a name="bit3" val="1"/>
+    </comp>
+    <comp lib="6" loc="(259,39)" name="Text">
+      <a name="text" val="指令存储器"/>
+    </comp>
+    <comp lib="3" loc="(560,390)" name="Divider"/>
+    <comp lib="6" loc="(440,34)" name="Text">
+      <a name="text" val="低两位存放选择信号信息"/>
+    </comp>
+    <comp lib="6" loc="(708,337)" name="Text">
+      <a name="text" val="选择信号等于2：加32"/>
+    </comp>
+    <comp lib="0" loc="(110,160)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="4" loc="(330,90)" name="ROM">
+      <a name="addrWidth" val="2"/>
+      <a name="dataWidth" val="4"/>
+      <a name="contents">addr/data: 2 4
+0 1 2
+</a>
+    </comp>
+    <comp lib="0" loc="(240,460)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(90,210)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(470,51)" name="Text">
+      <a name="text" val="高两位存放选择数据存储器地址信息"/>
+    </comp>
+    <comp lib="0" loc="(730,380)" name="Probe">
+      <a name="facing" val="west"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(390,280)" name="Probe">
+      <a name="facing" val="south"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+  </circuit>
+</project>
